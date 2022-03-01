@@ -150,7 +150,7 @@ public class Main {
 					defensaAtaque = "";
 
 					//le decimos a los usuarios cuantos planetas quedan vivos
-					planetas = comprobarEquiposVivos(planetas);
+					comprobarEquiposVivos(planetas);
 					System.out.println("Equipos vivos: " + planetas.size());
 					//sumamos al contador de rondas para el dado
 					contDado++;
@@ -395,11 +395,11 @@ public class Main {
 		if(planetas.size() == 2 && planetas.get(0).getVida() <=0 && planetas.get(1).getVida() <=0 && planetas.get(0).getVida() < planetas.get(1).getVida()) {
 			//mostramos resultados
 			System.out.println("¡Os habeis matado a la vez! ha ganado " + planetas.get(0).getNombre());
-			System.out.println("Vida de " + planetas.get(0).getNombre() + ":\n" + "Vida de " + planetas.get(1).getNombre() + ":");
+			System.out.println("Vida de " + planetas.get(0).getNombre() + ": " + planetas.get(0).getVida() + "\n" + "Vida de " + planetas.get(1).getNombre() + ": " + planetas.get(1).getVida());
 			//pueden empatar por completo
 		}else if(planetas.size() == 2 && planetas.get(0).getVida() <=0 && planetas.get(1).getVida() <=0 && planetas.get(0).getVida() == planetas.get(1).getVida()){
 			System.out.println("¡Habeis empatado!");
-			System.out.println("Vida de " + planetas.get(0).getNombre() + ":\n" + "Vida de " + planetas.get(1).getNombre() + ":");
+			System.out.println("Vida de " + planetas.get(0).getNombre() + ": " + planetas.get(0).getVida() + "\n" + "Vida de " + planetas.get(1).getNombre() + ": " + planetas.get(1).getVida());
 			//ha ganado el equipo en la segunda posicion del arraylist
 		}else if(planetas.size() == 2 && planetas.get(0).getVida() <=0 && planetas.get(1).getVida() <=0 && planetas.get(0).getVida() > planetas.get(1).getVida()) {
 			System.out.println("¡Os habeis matado a la vez! ha ganado " + planetas.get(1).getNombre());
