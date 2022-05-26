@@ -1,1 +1,4 @@
-a (Planeta enano) 15/03/22 10:22:43
+c (Planeta azul) identificador: 3333CCC 31/03/22 10:25:56
+Planeta azul (Planeta azul) y Planeta verde (Planeta verde) han empatado por completo 31/03/22 10:40:04
+gigante (Planeta gigante) identificador: 2111ABC 31/03/22 10:43:44
+7 (Planeta gigante) identificador: 4444DDD 19/04/22 10:17:32
